@@ -6,6 +6,8 @@ import com.avishak.groceryshoppinglistapp.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -29,6 +31,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void deleteProductById(Long id) {
         this.productRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Product> findAllProducts() {
+        return productRepository.findAll();
     }
 
 }
