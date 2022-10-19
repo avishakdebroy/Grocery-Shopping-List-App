@@ -18,7 +18,7 @@ public class ProductController {
     private ProductService productService;
 
 
-    @GetMapping("/")
+    @GetMapping("/index")
     public String Home() {
         return "index";
     }
