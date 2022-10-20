@@ -23,6 +23,12 @@ public class UserController {
         this.userService = userService;
     }
 
+    @GetMapping("/index")
+    public String home() {
+        return "index";
+    }
+
+
     @GetMapping("/login")
     public String loginForm() {
         return "login";
@@ -49,8 +55,8 @@ public class UserController {
 
     @GetMapping("/users")
     public String listUsers(Model model) {
-        List<UserDto> Users = userService.findAllUsers();
-        model.addAttribute("users", Users);
+        List<UserDto> users = userService.findAllUsers();
+        model.addAttribute("users", users);
         return "users";
     }
 
