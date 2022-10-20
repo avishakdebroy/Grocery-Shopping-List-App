@@ -14,6 +14,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**@author Avishak
+ * This class is the implementation of the UserService interface.
+ * It handles the business logic for the User entity.
+ */
 @Service
 public class UserServiceImpl implements UserService {
 

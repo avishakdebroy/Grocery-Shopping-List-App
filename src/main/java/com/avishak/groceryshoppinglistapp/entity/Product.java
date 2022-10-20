@@ -11,6 +11,10 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "products")
+/**@author Avishak
+ * This class is the entity for the Product entity.
+ * It contains the attributes of the Product entity.
+ */
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

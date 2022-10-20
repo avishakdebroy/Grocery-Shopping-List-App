@@ -14,6 +14,9 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
+/**@author Avishak
+ * This class is the implementation of the UserDetailsService interface.
+ */
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
 

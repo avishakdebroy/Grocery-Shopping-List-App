@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**@author Avishak
+ * This class implements the ProductService interface.
+ * It handles the business logic for the Product entity.
+ */
+
 @Service
 public class ProductServiceImpl implements ProductService {
 

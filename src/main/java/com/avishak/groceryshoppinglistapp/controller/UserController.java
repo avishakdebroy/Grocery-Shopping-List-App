@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import javax.validation.Valid;
 import java.util.List;
 
+/**@author Avishak
+ * This class is the controller for the User entity.
+ * It handles the requests and responses for the User entity.
+ */
 @Controller
 public class UserController {
 

@@ -15,6 +15,10 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
+/**@author Avishak
+ * This class is the entity for the User entity.
+ * It contains the attributes of the User entity.
+ */
 public class User {
 
     @Id

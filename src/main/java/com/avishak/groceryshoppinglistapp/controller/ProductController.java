@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-
+/**@author Avishak
+ * This class is the controller for the Product entity.
+ * It handles the requests and responses for the Product entity.
+ */
 
 @Controller
 public class ProductController {

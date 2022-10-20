@@ -11,48 +11,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-//
-//@EnableWebSecurity
-//@Configuration
-//public class AppSecurity {
-//    @Autowired
-//    private UserDetailsService userDetailsService;
-//
-//    @Bean
-//    public static PasswordEncoder passwordEncoder(){
-//        return new BCryptPasswordEncoder();
-//    }
-//
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        http.csrf().disable()
-//                .authorizeRequests()
-//                .antMatchers("/register/**").permitAll()
-//                .antMatchers("/index").permitAll()
-//                .antMatchers("/users").hasRole("ADMIN")
-//                .and().
-//                formLogin(
-//                        form -> form
-//                                .loginPage("/login")
-//                                .loginProcessingUrl("/login")
-//                                .defaultSuccessUrl("/users")
-//                                .permitAll()
-//
-//                ).logout(
-//                        logout -> logout
-//                                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-//                                .permitAll()
-//                );
-//        return http.build();
-//    }
-//
-//        @Autowired
-//        public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//            auth
-//                    .userDetailsService(userDetailsService)
-//                    .passwordEncoder(passwordEncoder());
-//        }
-//}
+
+/**@author Avishak
+ * This class is the security configuration class for the application.
+ */
 @Configuration
 @EnableWebSecurity
 public class AppSecurity {

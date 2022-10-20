@@ -12,6 +12,10 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "roles")
+/**@author Avishak
+ * This class is the entity for the Role entity.
+ * It contains the attributes of the Role entity.
+ */
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

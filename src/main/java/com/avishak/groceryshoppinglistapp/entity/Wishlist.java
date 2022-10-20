@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "wishlist")
+/**@author Avishak
+ * This class is the entity for the Wishlist entity.
+ * It contains the attributes of the Wishlist entity.
+ */
 public class Wishlist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

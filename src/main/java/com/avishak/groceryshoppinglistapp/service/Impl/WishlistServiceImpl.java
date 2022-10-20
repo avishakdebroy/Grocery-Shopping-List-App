@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**@author Avishak
+ * This class implements the WishlistService interface.
+ * It handles the business logic for the Wishlist entity.
+ */
 @Service
 public class WishlistServiceImpl implements WishlistService {
     @Autowired
