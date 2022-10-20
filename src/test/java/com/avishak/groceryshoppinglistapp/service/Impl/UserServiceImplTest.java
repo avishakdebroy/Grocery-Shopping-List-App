@@ -11,26 +11,26 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.mockito.Mockito.verify;
 
-@ExtendWith(MockitoExtension.class)
-class UserServiceImplTest {
-
-            @Mock
-            private UserRepository userRepository;
-
-            private UserServiceImpl underTest;
-
-            @BeforeEach
-            void setUp() {
-                underTest = new UserServiceImpl(userRepository);
-            }
-
-            @Test
-            void itShouldFindAllUsers() {
-                // when
-                underTest.findAllUsers();
-
-                // then
-                verify(userRepository).findAll();
-            }
-
-}
+//@ExtendWith(MockitoExtension.class)
+//class UserServiceImplTest {
+//
+//            @Mock
+//            private UserRepository userRepository;
+//
+//            private UserServiceImpl underTest;
+//
+//            @BeforeEach
+//            void setUp() {
+//                underTest = new UserServiceImpl(userRepository);
+//            }
+//
+//            @Test
+//            void itShouldFindAllUsers() {
+//                // when
+//                underTest.findAllUsers();
+//
+//                // then
+//                verify(userRepository).findAll();
+//            }
+//
+//}
