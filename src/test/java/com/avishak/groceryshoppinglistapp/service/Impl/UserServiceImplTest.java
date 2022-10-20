@@ -1,5 +1,6 @@
 package com.avishak.groceryshoppinglistapp.service.Impl;
 
+import com.avishak.groceryshoppinglistapp.dto.UserDto;
 import com.avishak.groceryshoppinglistapp.entity.User;
 import com.avishak.groceryshoppinglistapp.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,5 +19,18 @@ class UserServiceImplTest {
 
             private UserServiceImpl underTest;
 
+            @BeforeEach
+            void setUp() {
+                underTest = new UserServiceImpl(userRepository);
+            }
+
+            @Test
+            void itShouldFindAllUsers() {
+                // when
+                underTest.findAllUsers();
+
+                // then
+                verify(userRepository).findAll();
+            }
 
 }
