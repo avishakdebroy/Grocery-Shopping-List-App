@@ -37,21 +37,20 @@
                 <a class="nav-link" th:href="@{/products}">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/wishlist}">Wishlist</a>
+                <a class="nav-link" th:href="@{/wishlists}">Wishlist</a>
             </li>
         </ul>
     </div>
 </nav>
 <div class="form-group">
     <form
-    action="#"
     th:action="@{/save-wishlist}"
-    th:object="${wishlist}"
+    th:object="${wishlists}"
     method="POST"
     >
         <input
                 type="text"
-                th:field="*{name}"
+                th:field="*{listName}"
                 placeholder="Product Name"
                 class="form-control mb-4 col-4"
         />

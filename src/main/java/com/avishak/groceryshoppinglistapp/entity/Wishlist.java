@@ -16,7 +16,7 @@ public class Wishlist {
     @Column(name = "list_id")
     private Long id;
     @Column(nullable = false, name = "product_name")
-    private String name;
+    private String listName;
     @Column(nullable = true, name = "quantity")
     private Long quantity;
 }
