@@ -1,4 +1,4 @@
-# Grocery-Shopping-List-App
+# DebRoy_Avishak_GroceryShoppingListApp_CaseStudy
 Create A "groceryDatabase" in MySql if the application does not create it Automaticly.
 Please Open the App with Visual Studio Code.
 
