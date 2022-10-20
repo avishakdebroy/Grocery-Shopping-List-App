@@ -6,6 +6,8 @@ import com.avishak.groceryshoppinglistapp.repository.ProductRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -48,5 +50,20 @@ class ProductServiceImplTest {
             // then
             verify(productRepository).deleteById(id);
         }
+
+        // Create a parameterized test to test
+          @ParameterizedTest
+          @ValueSource(strings = {"", " "})
+            void itShouldThrowExceptionWhenNameIsBlank(String name) {
+                // given
+                Product product = new Product();
+                product.setName(name);
+
+                // when
+                underTest.saveProduct(product);
+
+                // then
+                verify(productRepository).save(product);
+            }
 
 }
