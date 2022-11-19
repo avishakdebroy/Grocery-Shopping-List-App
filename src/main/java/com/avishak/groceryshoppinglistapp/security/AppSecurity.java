@@ -34,12 +34,15 @@ public class AppSecurity {
                 .antMatchers("/register/**").permitAll()
                 .antMatchers("/index").permitAll()
                 .antMatchers("/users").hasRole("ADMIN")
+                .antMatchers("/products").hasRole("ADMIN")
+                .antMatchers("/wishlists").hasRole("ADMIN")
                 .and().
                 formLogin(
                         form -> form
                                 .loginPage("/login")
                                 .loginProcessingUrl("/login")
                                 .defaultSuccessUrl("/users")
+                                .failureUrl("/login?error=true")
                                 .permitAll()
                 ).logout(
                         logout -> logout
